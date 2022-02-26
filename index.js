@@ -19,9 +19,9 @@ app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, '/about.html'))
 })
 
-// app.get('/about', (req, res) => {
-//     res.render('./about.html')
-// })
+app.get('/about', (req, res) => {
+    res.render('./about.html')
+})
 
 
 app.listen(PORT, () => console.log(`Server is running on PORT:${PORT}`));
